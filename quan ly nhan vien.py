@@ -13,14 +13,6 @@ def save_to_csv(data, filename="employee_data.csv"):
         if not file_exists:
             writer.writerow(["Mã", "Tên", "Ngày sinh", "Giới tính", "Đơn vị", "Chức danh", "Số CMND", "Ngày cấp", "Nơi cấp"])
         writer.writerow(data)
-
-import tkinter as tk
-from tkinter import messagebox, filedialog
-import csv
-import os
-from datetime import datetime
-import pandas as pd
-
 # Hàm lưu dữ liệu vào CSV
 def save_to_csv(data, filename="employee_data.csv"):
     file_exists = os.path.isfile(filename)
